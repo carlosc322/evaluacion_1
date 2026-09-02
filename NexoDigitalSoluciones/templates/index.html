@@ -7,8 +7,8 @@
     <div class="container">
       <h1 class="display-5">Soluciones tecnológicas para hacer crecer tu empresa</h1>
       <p class="lead col-lg-8">En NexoDigital Soluciones ayudamos a pequeñas y medianas empresas a digitalizar sus procesos con desarrollo web, aplicaciones móviles, nube y ciberseguridad.</p>
-      <a href="servicios.html" class="btn btn-light btn-lg mt-2 me-2">Ver nuestros servicios</a>
-      <a href="contacto.html" class="btn btn-outline-light btn-lg mt-2">Contáctanos</a>
+      <a href="{% url 'mostrarServicio' %}" class="btn btn-light btn-lg mt-2 me-2">Ver nuestros servicios</a>
+      <a href="{% url 'mostrarContacto' %}" class="btn btn-outline-light btn-lg mt-2">Contáctanos</a>
     </div>
   </section>
   
@@ -44,7 +44,7 @@
           </div>
         </div>
     </div>
-    <p class="text-center mt-4"><a href="servicios.html" class="fw-semibold">Ver el detalle de todos los servicios &rarr;</a></p>
+    <p class="text-center mt-4"><a href="{% url 'mostrarServicio' %}" class="fw-semibold">Ver el detalle de todos los servicios &rarr;</a></p>
   </section>
   
   <section class="container py-5">
@@ -56,7 +56,7 @@
           <li>Equipo multidisciplinario: desarrollo, diseño y ciberseguridad</li>
           <li>Soporte post-entrega incluido en todos los servicios</li>
         </ul>
-        <a href="nosotros.html" class="fw-semibold">Conoce más sobre nosotros &rarr;</a>
+        <a href="{% url 'mostrarNosotros' %}" class="fw-semibold">Conoce más sobre nosotros &rarr;</a>
       </div>
     </div>
   </section>

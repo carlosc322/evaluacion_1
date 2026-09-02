@@ -11,16 +11,16 @@
 <body>
 <nav class="navbar navbar-expand-md tn-navbar navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Nexo<span>Digital</span> Soluciones</a>
+    <a class="navbar-brand" href="{% url 'mostrarInicio' %}">Nexo<span>Digital</span> Soluciones</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tnNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="tnNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="index.html" background:'red'>Inicio</a></li>
-        <li class="nav-item"><a class="nav-link " href="servicios.html">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link " href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link active" href="{% url 'mostrarInicio' %}">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link " href="{% url 'mostrarServicio' %}">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link " href="{% url 'mostrarNosotros' %}">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link " href="{% url 'mostrarContacto' %}">Contacto</a></li>
       </ul>
     </div>
   </div>

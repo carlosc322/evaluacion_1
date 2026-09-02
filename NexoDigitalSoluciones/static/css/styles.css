@@ -13,6 +13,7 @@
   
   /* ---------- Navbar ---------- */
   .tn-navbar {
+  
     background: var(--tn-dark);
   }
   .tn-navbar .navbar-brand {
@@ -29,6 +30,11 @@
   .tn-navbar .nav-link:hover,
   .tn-navbar .nav-link.active {
     color: #ffffff !important;
+  }
+
+  .nav-link{
+    background: #0b3d91;
+    padding: 20px;
   }
   
   /* ---------- Hero ---------- */

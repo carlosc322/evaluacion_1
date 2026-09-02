@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %} Ciberseguridad {% endblock %}
+
+{% block content %}
+
+{% for dato in ciberseguridad %}
+<header class="tn-detail-header">
+  <div class="container">
+    <p class="mb-1"><a href="{% url 'mostrarServicio' %}" class="text-white-50 text-decoration-none">&larr; Volver a servicios</a></p>
+    <h1>{{dato.nombre}}</h1>
+    <p class="mb-0 fs-5">{{dato.resumen}}</p>
+  </div>
+</header>
+
+<section class="container py-5">
+  <div class="row g-5">
+    <div class="col-lg-8">
+      <h3>Descripción del servicio</h3>
+      <p>{{dato.descripcion}}</p>
+      <h4 class="mt-4">Qué incluye</h4>
+      {% for caracter in dato.caracteristica %}
+      <ul class="tn-feature-list list-unstyled">
+        <li>{{caracter}}</li>
+      </ul>
+      {% endfor %}
+    </div>
+    <div class="col-lg-4">
+      <div class="tn-price-box">
+        <p class="text-muted mb-1">Servicio N&deg; 4</p>
+        <p class="tn-price mb-1">Desde ${{dato.precio}}</p>
+        <p class="text-muted">Plazo estimado: {{dato.duracion}}</p>
+        <a href="{% url 'mostrarContacto' %}" class="btn btn-primary w-100 mt-2">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}
