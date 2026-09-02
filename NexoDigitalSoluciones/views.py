@@ -12,11 +12,8 @@ def mostrarServicio(request):
 def mostrarContacto(request):
     return render(request, 'contacto.html')
 
-
 def mostrarNosotros(request):
     return render(request,'nosotros.html')
-
-
 
 def mostrarBase(request):
     return render(request, 'base.html')
