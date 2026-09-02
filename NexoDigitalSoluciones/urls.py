@@ -4,7 +4,7 @@ from NexoDigitalSoluciones import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',views.mostrarInicio)
+    path('',views.mostrarInicio, name='mostrarInicio'),
+    path('mostrarServicio/', views.mostrarServicio, name='mostrarServicio')
     
 ]

@@ -5,3 +5,6 @@ from django.shortcuts import render
 def mostrarInicio(request):
 
     return render(request,'index.html')
+
+def mostrarServicio(request):
+    return render(request, 'servicio.html')
